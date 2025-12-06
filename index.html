@@ -81,37 +81,154 @@
     </style>
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "MakeYourPDF.online",
-        "url": "https://makeyourpdf.online/",
-        "description": "Free online PDF converter and tools",
-        "applicationCategory": "UtilityApplication",
-        "operatingSystem": "Any",
-        "offers": {
-            "@type": "Offer",
-            "price": "0"
-        },
-        "featureList": [
-            "PDF Conversion",
-            "PDF Merging",
-            "PDF Compression",
-            "Image to PDF"
-        ]
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": ["WebApplication", "SoftwareApplication"],
+            "name": "MakeYourPDF.online",
+            "alternateName": "Make Your PDF",
+            "url": "https://makeyourpdf.online/",
+            "logo": "https://makeyourpdf.online/logo.png",
+            "description": "Free online PDF converter - Convert Word, Excel, images to PDF instantly",
+            
+            "applicationCategory": "UtilityApplication",
+            "applicationSubCategory": "Document Converter",
+            "operatingSystem": "Any",
+            
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                "@type": "Organization",
+                "name": "MakeYourPDF"
+                }
+            },
+            
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.7",
+                "ratingCount": "856",
+                "bestRating": "5",
+                "worstRating": "1"
+            },
+            
+            "featureList": [
+                "PDF Conversion",
+                "Merge PDF", 
+                "Compress PDF",
+                "Image to PDF",
+                "Word to PDF",
+                "Excel to PDF",
+                "PPT to PDF",
+                "Split PDF"
+            ],
+            
+            "screenshot": "https://makeyourpdf.online/screenshot.png",
+            
+            "creator": {
+                "@type": "Organization",
+                "name": "MakeYourPDF",
+                "url": "https://makeyourpdf.online/"
+            },
+            
+            "keywords": "pdf converter, online pdf tool, free pdf tools"
+        }
     </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MakeYourPDF",
+            "url": "https://makeyourpdf.online/",
+            "logo": "https://makeyourpdf.online/logo.png",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "availableLanguage": ["English", "Hindi"]
+            },
+            "sameAs": [
+                "https://twitter.com/makeyourpdf",
+                "https://facebook.com/makeyourpdf"
+            ]
+        }
     </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "Is MakeYourPDF really free?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, 100% free forever. No hidden charges or subscriptions."
+                }
+            }, {
+                "@type": "Question",
+                "name": "What file formats can I convert to PDF?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Word (.doc, .docx), Excel (.xls, .xlsx), PowerPoint (.ppt, .pptx), Images (.jpg, .png, .gif), Text files, and more."
+                }
+            }, {
+                "@type": "Question",
+                "name": "Is my data safe?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, all files are processed securely in your browser. We don't store any files on our servers."
+                }
+            }]
+        }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://makeyourpdf.online/"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "PDF Tools",
+                "item": "https://makeyourpdf.online/#tools"
+            }, {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "PDF Converter",
+                "item": "https://makeyourpdf.online/converter"
+            }]
+        }
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P5WD3T8D');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5WD3T8D" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav class="navbar body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
